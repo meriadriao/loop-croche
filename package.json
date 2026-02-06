@@ -2,7 +2,7 @@
   "name": "contador-croche",
   "private": "true",
   "version": "0.0.1",
-  "homepage": "https://meriadriao.github.io/loop-crochet/",
+  "homepage": "https://loop-croche.vercel.app",
   "type": "module",
   "scripts": {
     "dev": "vite",
