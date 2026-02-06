@@ -1,0 +1,97 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: ["pink, pinkdark"];
+};
+
+@plugin "daisyui/theme" {
+  name: "pink";
+  default: true;
+  prefersdark: false;
+  color-scheme: "light";
+  --color-base-100: #fcfcfc;
+  --color-base-200: #f7f7f8;
+  --color-base-300: #eeeef1;
+  --color-base-content: #090909;
+  --color-primary: #ff0054;
+  --color-primary-content: oklch(98% 0.016 73.684);
+  --color-secondary: #C50054;
+  --color-secondary-content: oklch(100% 0.014 254.604);
+  --color-accent: #FF668E;
+  --color-accent-content: oklch(100% 0.016 293.756);
+  --color-neutral: #98003F;
+  --color-neutral-content: oklch(100% 0 0);
+  --color-info: #ffd0d6;
+  --color-info-content: oklch(0% 0.014 254.604);
+  --color-success: #ff175c;
+  --color-success-content: oklch(100% 0 0);
+  --color-warning: #ff9288;
+  --color-warning-content: oklch(0% 0 0);
+  --color-error: #FF93AB;
+  --color-error-content: oklch(2.4% 0.045 12.094);
+  --radius-selector: 1rem;
+  --radius-field: 1rem;
+  --radius-box: 1rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+  --depth: 1;
+  --noise: 0;
+}
+
+@plugin "daisyui/theme" {
+  name: "pinkdark";
+  default: false;
+  prefersdark: true;
+  color-scheme: "dark";
+  --color-base-100: #262629;
+  --color-base-200: #18181b;
+  --color-base-300: #09090b;
+  --color-base-content: #f7f9fa;
+  --color-primary: #ff0054;
+  --color-primary-content: oklch(98% 0.016 73.684);
+  --color-secondary: #C50054;
+  --color-secondary-content: oklch(100% 0.014 254.604);
+  --color-accent: #FF668E;
+  --color-accent-content: oklch(100% 0.016 293.756);
+  --color-neutral: #98003F;
+  --color-neutral-content: oklch(100% 0 0);
+  --color-info: #ffd0d6;
+  --color-info-content: oklch(0% 0.014 254.604);
+  --color-success: #ff175c;
+  --color-success-content: oklch(100% 0 0);
+  --color-warning: #ff9288;
+  --color-warning-content: oklch(0% 0 0);
+  --color-error: #FF93AB;
+  --color-error-content: oklch(2.4% 0.045 12.094);
+  --radius-selector: 1rem;
+  --radius-field: 1rem;
+  --radius-box: 1rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+  --depth: 1;
+  --noise: 0;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+
+body {
+  background-color: var(--color-base-100);
+  font-family: "Lexend", sans-serif;
+}
+
+h1 {
+  color: var(--color-primary);
+  line-height: 21.1px;
+}
+
+/* firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+/* others */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
